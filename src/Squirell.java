@@ -1,10 +1,10 @@
 public class Squirell {
 
-    public static int PickingNuts(Nut[] mas, int cou) {
+    public static int PickingNuts(Nut[] mas, double sum) {
         for (int i = 0; i < mas.length; i++) {
-            cou++;
-            System.out.println("ура, еще орех!");
+            sum += mas[i].getWeight();
+            System.out.println("ура, еще орех!"+sum);
         }
-        return cou;
+        return (int) sum;
     }
 }
